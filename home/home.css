@@ -1093,26 +1093,31 @@ img {
   height: auto;
 }
 
+/* 📱 MOBILE */
 @media (max-width: 768px) {
   .side {
+    display: none;
+  }
+}
+
+/* 💻 PC */
+@media (min-width: 769px) {
+  .side {
     display: block;
-    position: relative;
-    top: 0;
-    transform: none;
-    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 26px;
   }
 
-  .left,
-  .right {
-    position: static;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  .content p {
+    font-size: 14px;
+    padding: 0 10px;
   }
-
-  .diamond {
-    width: 80px !important;
-    height: 80px !important;
-    transform: rotate(45deg);
+}
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 60px 20px;
   }
 }
