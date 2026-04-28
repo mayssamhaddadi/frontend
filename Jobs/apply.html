@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./apply.css">
+  <title>VoxeraHire</title>
+  <link rel="icon" href="../home/images/logo.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="nav">
+  <div class="logo">
+     <img src="images/logo.png" alt="logo">
+  </div>
+
+  <nav>
+     <ul class="menu">
+    <li><a href="../index.html">Accueil</a></li>
+
+  </nav>
+  </header>
+  <button class="back-btn" onclick="goBack()">← Retour aux jobs</button>
+<div class="center">
+  <div class="card">
+    <h2>Postuler</h2>  
+
+    <input id="name" placeholder="Votre nom">
+    <input id="prenom" placeholder="Votre prénom">
+    <input id="email" placeholder="Votre email">
+    <input id="phone" placeholder="Téléphone">
+
+    <input id="education" placeholder="Formation (ex: Bac+3 Informatique)">
+
+    <textarea id="experience" placeholder="Votre expérience"></textarea>
+
+    <p>Langues :</p>
+    <div class="languages">
+      <label><input type="checkbox" name="languages" value="Arabe"> Arabe</label>
+      <label><input type="checkbox" name="languages" value="Français"> Français</label>
+      <label><input type="checkbox" name="languages" value="Anglais"> Anglais</label>
+      <label><input type="checkbox" name="languages" value="Espagnol"> Espagnol</label>
+    </div>
+
+    <button type="button" onclick="submitApplication()">Envoyer</button>
+
+    <p id="msg"></p>
+  </div>
+</div>
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Nos services</h3>
+      <ul>
+        <li>Bootcamps Intensifs</li>
+        <li>Formations Courtes Ciblées</li>
+        <li>Coaching Individuel</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Liens rapides</h3>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../Jobs/user.html">Offres d'emploi</a></li>
+        <li><a href="../Jobs/apropos.html">À propos de nous</a></li>
+        <li><a href="../Jobs/services.html">Nos services</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Localisation</h3>
+      <p>Rue Ibn Toumart, Tanger, 90000 Morocco</p>
+
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps?q=Rue+Ibn+Toumart,+Tanger,+90000,+Morocco&output=embed"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contactez-nous</h3>
+      <ul class="social-links">
+        <li>
+      <a href="https://www.facebook.com/share/18JmaUmBBF/?mibextid=wwXIfr" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.instagram.com/voxerahire" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.linkedin.com/in/samia-jardi-a153673b8" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 VoxeraHire. Tous droits réservés.</p>
+  </div>
+
+</footer>
+<script src="./apply.js"></script>
+</body>
+</html>

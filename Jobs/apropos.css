@@ -1,0 +1,419 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f8fafc;
+}
+
+.nav {
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 80px;
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
+}
+
+    .logo img{
+      height: 75px;
+      object-fit:contain;
+    }
+
+    .menu{
+      list-style:none;
+      display:flex;
+      gap:15px;
+    }
+
+    .menu li{
+  cursor:pointer;
+  font-weight:bold;
+  padding:10px 10px;
+  border-radius:30px;
+  transition:0.3s;
+  color:black;
+  box-shadow: rgb(101, 208, 210);
+
+}
+.menu a {
+  color: black;
+  font-weight: bold;
+  padding:10px 10px;
+  border-radius:30px;
+  display:inline-block;
+  transition:0.3s;
+   text-decoration: none;
+  
+}
+
+.menu a:hover {
+  background:rgba(0,0,0,0.15);
+  color:#071462;
+  transform:scale(1.05);
+}
+
+/* HERO */
+.hero {
+  height: 400px;
+  background: linear-gradient(rgba(28, 28, 29, 0.5), rgba(146, 117, 79, 0.5)),
+            url('../Jobs/images/bodi.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  font-size: 42px;
+}
+
+.hero-content p {
+  opacity: 0.9;
+}
+
+/* SPLIT */
+.split {
+  display: flex;
+  padding: 80px 60px;
+  gap: 50px;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.text p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* IMAGE */
+.image {
+  flex: 1;
+  height: 280px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: 0.4s;
+}
+
+.image:hover {
+  transform: scale(1.03);
+}
+
+/* IMAGES HD */
+.img1 {
+  background-image: url('../Jobs/images/body6.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.img2 {
+  background-image: url('../Jobs/images/body2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* FEATURES */
+.features {
+  text-align: center;
+  padding: 80px 40px;
+  background: #f1f5ff;
+}
+
+.features h2 {
+  font-size: 32px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 240px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card i {
+  font-size: 28px;
+  color: #4a6cf7;
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 14px 22px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+.email {
+  background: #4a6cf7;
+}
+
+.whatsapp:hover,
+.email:hover {
+  transform: scale(1.05);
+}
+.footer {
+  background: #636060;
+  color: #fff;
+  padding: 50px 20px 20px;
+}
+
+.row.column {
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.row.column .image {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.row.column .image img {
+  height: 230px;
+}
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #5b8f93;
+  padding-left: 5px;
+}
+
+.footer-col p {
+  color: #f4f5f7;
+  font-size: 14px;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #4f4f51;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #f2f3f4;
+}
+.social-links {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.social-links li {
+  list-style: none;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: #0f172a;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+.footer {
+  background: #636060;
+  color: #fff;
+  padding: 50px 20px 20px;
+}
+
+.row.column {
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.row.column .image {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.row.column .image img {
+  height: 230px;
+}
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #5b8f93;
+  padding-left: 5px;
+}
+
+.footer-col p {
+  color: #f4f5f7;
+  font-size: 14px;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #4f4f51;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #f2f3f4;
+}
+.social-links {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.social-links li {
+  list-style: none;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: #0f172a;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+/* couleurs spécifiques */
+.social-links a:hover .fa-facebook-f {
+  color: #1877f2;
+}
+
+.social-links a:hover .fa-instagram {
+  color: #e1306c;
+}
+
+.social-links a:hover .fa-linkedin-in {
+  color: #0077b5;
+}
+.map-container {
+  max-width: 100%;
+  margin: 5px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  height: 30vh;
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

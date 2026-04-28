@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+<link rel="icon" href="../home/images/logo.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dashboard.css">
+</head>
+
+<body>
+<div class="top-logo">
+  <img src="../home/images/logo.png" alt="logo">
+</div>
+  <div class="container">
+
+    <!-- ADD JOB -->
+    <div class="form-card">
+      <h2>Ajouter une offre</h2>
+
+      <input id="title" placeholder="Titre du poste">
+      <input id="location" placeholder="Localisation">
+
+      <textarea id="description" placeholder="Description"></textarea>
+
+      <button class="add-btn" onclick="addJob()">Ajouter</button>
+
+      <button class="logout-btn" onclick="logout()">Se déconnecter</button>
+    </div>
+
+    <!-- JOBS -->
+    <h2>Offres</h2>
+    <div id="jobs"></div>
+
+    <!-- CANDIDATES -->
+    <h2>Candidats</h2>
+    <div id="candidates"></div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="./dashbord.js"></script>
+
+</body>
+</html>
