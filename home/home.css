@@ -341,22 +341,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   transform: rotate(45deg) scale(1.1);
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .side {
-    display: none;
-  }
 
-  .content h1 {
-    font-size: 28px;
-  }
-}
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
-  }
-}
 /* SECTION */
 .team {
   padding: 80px;
