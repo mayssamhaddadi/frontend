@@ -79,3 +79,19 @@ if (diamonds.length > 0) {
 function goToJobs(city) {
   window.location.href = `Jobs/user.html?city=${city}`;
 }
+function sendEmail(e) {
+  e.preventDefault();
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // 📱 Mobile → mail app
+    window.location.href = "mailto:s.jardi@voxerahire.com?subject=Demande%20d%27information&body=Bonjour%2C%20je%20souhaite%20plus%20d%27informations";
+  } else {
+    // 💻 PC → Gmail
+    window.open(
+      "https://mail.google.com/mail/?view=cm&to=s.jardi@voxerahire.com&su=Demande%20d'information&body=Bonjour%2C%20je%20souhaite%20plus%20d'informations",
+      "_blank"
+    );
+  }
+}
