@@ -463,12 +463,12 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 /* CONTAINER */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
 }
 
 .card {
-  min-height: 280px;
+  min-height: 180px;
   background: rgb(192, 196, 196);
   border-radius: 16px;
   padding: 22px;
